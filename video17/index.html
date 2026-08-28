@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* class selector-  jisme class likha hota hai ushe select karta hai */
+        .red {
+            color: red;
+            background-color: pink;
+        }
+
+        /* id selector -  id jisme id likha hota hai */
+        #green {
+            color: blue;
+            background-color: skyblue;
+        }
+
+        /* element selector - element selector jis bhi tag ko select karenge ushko apply karta hai
+           div{
+                /* color: brown; */
+
+        /* child selector- child seletor jo hai chid ko select karta hai */
+        div>p {
+            color: green;
+            background-color: brown;
+        }
+
+        /* Descendent selector - ishme jaha bhi p hoga sab ko color kar dega
+        div p {
+            color: grey;
+        }
+     */
+
+     /* universal selector */
+     *{
+        margin: 0;
+        padding: 0;
+     }
+
+     /* psuedo selector */
+
+     a:visited{
+        color: blueviolet;
+     }
+
+     a:link{
+        color: bisque;
+     }
+
+     a:active{
+        background-color: aquamarine;
+     }
+
+     a:hover{
+        background-color: black;
+     }
+
+     p:first-child{
+        background-color:orange;
+     }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>this is first child</p>
+        <p>this is second child</p>
+    </main>
+    <div class="red">
+        this is a div
+    </div>
+    <div id="green">this is a another div</div>
+
+    <div>
+        <p>this is a child selector</p>
+    </div>
+
+    <div> <a href="https://www.google.com">Go to Google</a></div><a
+    <div><a href="https://www.facebook2.com">Go to Facebook</a></div>
+
+    <div><a href="bhdsjbfgh">ty</a></div>
+
+    <div><a href="https://www.youtube.com">Go to youtube</a></div>
+    <div><a href="https://www.instagram.com">Go to instagram</a></div>
+</body>
+
+</html>
